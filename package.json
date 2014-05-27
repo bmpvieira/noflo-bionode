@@ -1,0 +1,47 @@
+{
+  "name": "noflo-bionode",
+  "description": "Bioinformatics components for the NoFlo flow-based programming environment",
+  "author": {
+    "name": "Bruno Vieira",
+    "email": "mail@bmpvieira.com"
+  },
+  "version": "0.0.7",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bergie/noflo/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noflo/noflo-bionode.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "dependencies": {
+    "noflo": "0.5.x",
+    "marked": "0.3.x",
+    "html-md": "2.0.x",
+    "bionode-ncbi": "git+https://2324bbbdbd7cde359d377142e268f94e6508831e:x-oauth-basic@github.com/bmpvieira/bionode-ncbi.git"
+  },
+  "devDependencies": {
+    "noflo-test": "0.0.x",
+    "coffeelint": "*",
+    "coffee-script": "1.4.x"
+  },
+  "noflo": {
+    "icon": "file-text",
+    "components": {
+      "Search": "./components/Search.coffee",
+      "Link": "./components/Link.coffee",
+      "XMLtoJSONProperties": "./components/XMLtoJSONProperties.coffee"
+    }
+  },
+  "scripts": {
+    "pretest": "coffeelint -r components",
+    "test": "noflo-test --spec test/*.coffee"
+  },
+  "homepage": "https://github.com/noflo/noflo-bionode",
+  "private": true
+}
