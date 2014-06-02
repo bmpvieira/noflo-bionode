@@ -2,6 +2,8 @@ noflo = require 'noflo'
 ncbi = require 'bionode-ncbi'
 
 class Search extends noflo.Component
+  icon: 'search'
+  description: 'Search NCBI databases'
   constructor: ->
     @db = null
     @inPorts = new noflo.InPorts

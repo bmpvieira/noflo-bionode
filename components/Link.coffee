@@ -2,6 +2,8 @@ noflo = require 'noflo'
 ncbi = require 'bionode-ncbi'
 
 class Link extends noflo.Component
+  description: 'Does NCBI link, i.e., searches a database for unique IDs related to an ID from another database.'
+  icon: 'link'
   constructor: ->
     @dbs = null
     @inPorts = new noflo.InPorts

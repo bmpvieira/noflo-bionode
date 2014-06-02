@@ -31,11 +31,10 @@
     "coffee-script": "1.4.x"
   },
   "noflo": {
-    "icon": "file-text",
+    "icon": "cube",
     "components": {
       "Search": "./components/Search.coffee",
-      "Link": "./components/Link.coffee",
-      "XMLtoJSONProperties": "./components/XMLtoJSONProperties.coffee"
+      "Link": "./components/Link.coffee"
     }
   },
   "scripts": {

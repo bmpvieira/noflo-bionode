@@ -2,6 +2,8 @@ noflo = require 'noflo'
 ncbi = require 'bionode-ncbi'
 
 class XMLtoJSONProperties extends noflo.Component
+  description: 'Converts specidied properties of objects from XML to JSON.'
+  icons: 'files-o'
   constructor: ->
     @properties = null
     @inPorts = new noflo.InPorts
